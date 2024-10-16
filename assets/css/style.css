@@ -1,0 +1,108 @@
+:root {
+    --accent-color: #cc6600;
+    --text-color: #ffffff;
+    --background-color:#1c1c1c;
+    --element-background-color:#262626;
+}
+
+*{
+    font-family:  'Segoe UI', 'Helvetica Neue', 'Product Sans', 'Roboto', sans-serif;
+}
+
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    background-image: url('../images/bg.png');
+    background-blend-mode: darken luminosity;
+    background-color: lightgray;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.panel {
+    background-color: var(--element-background-color);
+    border-radius: 0.4rem !important;
+    opacity: 0.8;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    border-radius: 0.4rem; 
+    flex-direction: row; 
+    gap: 2vh; 
+    margin-bottom: 0.5rem; 
+    padding: 0.5rem; 
+    align-items: center;
+    max-width: 80vw;
+    min-width: 40vw;
+}
+
+.bio {
+    width: 60vw;
+    height: 40vh;
+    text-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.bio > * {
+    padding: 1vw;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 11vh;
+    height: 11vh;
+    border-radius: 0.4rem !important;
+}
+
+button,
+.button {
+    border-radius: 0.4rem;
+    font-size: 2vh;
+    background: var(--element-background-color);
+    padding: 0.5rem 0.75rem;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+
+.hidden {
+    display: none;
+}
